@@ -1,0 +1,2 @@
+class SippersController < ApplicationController
+end

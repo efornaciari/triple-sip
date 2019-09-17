@@ -1,0 +1,28 @@
+version: '3.5'
+services:
+  db:
+    image: postgres:9.5
+    volumes:
+    - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: "devuser"
+      POSTGRES_PASSWORD: "devuser"
+    networks:
+    - default
+    container_name: triple-sip_db_1
+
+  web:
+    build: .
+    volumes:
+    - .:/triple-sip
+    command: bundle exec puma -C config/puma.rb
+    ports:
+    - "3005:3005"
+    depends_on:
+    - db
+    env_file:
+    - .env
+    container_name: triple-sip_web_1
+
+volumes:
+  postgres_data:

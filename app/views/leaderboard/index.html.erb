@@ -1,0 +1,23 @@
+<div>
+  <div class="container background">
+    <div>
+      <h1 id="title">Triple Sip</h1>
+      <h2 id="subtitle">World Record</h2>
+    </div>
+    <div class="container">
+      <% @sippers.each_with_index do |sipper, i|  %>
+        <div class="sipper row">
+          <div class="col-xs-1">
+            <h3><%= i + 1 %>.</h3>
+          </div>
+          <div class="col-xs-6">
+            <h3> <%= sipper.first_name %> <%= sipper.last_initial %>.</h3>
+          </div>
+          <div class="col-xs-5">
+            <h3><%= sipper.min_formatted_time %></h3>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
