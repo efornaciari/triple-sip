@@ -1,0 +1,126 @@
+// Place all the styles related to the leaderboard controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+@font-face {
+  font-family: 'spooky';
+  src: font-url('MeltdownMF.ttf') format('opentype');
+}
+
+.background {
+  background: asset_url('cardboard-texture.jpg') repeat;
+  background-size: 100%;
+}
+
+.container {
+  height: 100%
+}
+
+// Small devices (phones, 768px and below)
+@media (min-width: 0px) {
+  #title {
+    font-family: spooky, serif;
+    font-weight: bold;
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  #subtitle {
+    font-family: spooky, serif;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: -1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .sipper div h3 {
+    font-family: spooky, serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin: 0.75rem;
+  }
+  .sipper div {
+    padding: 0;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  #title {
+    font-family: spooky, serif;
+    font-weight: bold;
+    font-size: 12rem;
+    text-align: center;
+  }
+
+  #subtitle {
+    font-family: spooky, serif;
+    font-weight: bold;
+    font-size: 8rem;
+    text-align: center;
+    margin-top: -2rem;
+    margin-bottom: 4rem;
+  }
+
+  .sipper div h3 {
+    font-family: spooky, serif;
+    font-weight: bold;
+    font-size: 4rem;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  #title {
+    font-family: spooky, serif;
+    font-weight: bold;
+    font-size: 16rem;
+    text-align: center;
+  }
+
+  #subtitle {
+    font-family: spooky, serif;
+    font-weight: bold;
+    font-size: 10rem;
+    text-align: center;
+    margin-top: -2rem;
+    margin-bottom: 4rem;
+  }
+
+  .sipper div h3 {
+    font-family: spooky, serif;
+    font-weight: bold;
+    font-size: 6rem;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  #title {
+    font-family: spooky, serif;
+    font-weight: bold;
+    font-size: 20rem;
+    text-align: center;
+  }
+
+  #subtitle {
+    font-family: spooky, serif;
+    font-weight: bold;
+    font-size: 12rem;
+    text-align: center;
+    margin-top: -2rem;
+    margin-bottom: 4rem;
+  }
+
+  .sipper div h3 {
+    font-family: spooky, serif;
+    font-weight: bold;
+    font-size: 8rem;
+  }
+}
